@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://openmetadata/db:1.5.6 docker://crpi-u91wjv1bkh7wawvr.cn-qingdao.personal.cr.aliyuncs.com/xuzy-0517/db:1.5.6
+         skopeo copy docker://docker.elastic.co/elasticsearch/elasticsearch:7.16.3 docker://crpi-u91wjv1bkh7wawvr.cn-qingdao.personal.cr.aliyuncs.com/xuzy-0517/elasticsearch:7.16.3
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
